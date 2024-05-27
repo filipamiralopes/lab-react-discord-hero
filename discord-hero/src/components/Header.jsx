@@ -1,7 +1,10 @@
 import React from "react";
+import discordBackground from "../assets/discord-background.png"
 
 function Header() {
   return (
+    <>
+    <div className="landing-page">
     <div className="header">
       <h1>
         IMAGINE A <br />
@@ -16,6 +19,11 @@ function Header() {
       <button id="download-btn">Download for Mac</button>
       <button id="open-btn">Open Discord in your browser</button>
     </div>
+    <div className="background">
+      <img src={discordBackground} alt="discordBackground"/>
+    </div>
+    </div>
+    </>
   );
 }
 
